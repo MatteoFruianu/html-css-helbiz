@@ -1,0 +1,110 @@
+
+/* GENERAL STYLE */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* UTILITIES */
+
+
+
+.container-small {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.styled-list {
+  display: inline-block;
+}
+
+.i-block {
+  display: inline-block;
+}
+
+
+ /* DEBUG:  */
+
+.box {
+  background-color: lightgrey;
+  border: 1px solid black;
+}
+
+/* nav styles */
+
+nav {
+  line-height: 80px;
+}
+
+nav ul li {
+  display: none;
+}
+
+
+/* header styles */
+
+
+header {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  height: 400px;
+  text-align: center;
+  color: white;background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text p {
+  margin: 10px 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-weight: 600;
+  }
+
+  .nav-menu-lang {
+    margin-left: 40px
+  }
+
+  .nav-menu-lang li a {
+    border-right: 1px solid grey;
+  }
+
+}
